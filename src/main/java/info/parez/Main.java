@@ -3,6 +3,7 @@ package info.parez;
 //import java.lang.*;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,7 +22,12 @@ public class Main {
 
         driver.get("https://www.google.com");
 
-//        driver.close();
+//        WebElement searchBox = driver.findElement(By.name("q"));
+//        searchBox.sendKeys("Selenium");
+//        searchBox.sendKeys(Keys.RETURN);
+
+
+        //driver.close();
         driver.quit();
 
         System.exit(0);
